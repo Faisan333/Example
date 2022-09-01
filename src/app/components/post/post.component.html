@@ -1,0 +1,47 @@
+<div class="container" style="margin-top: 20px;">
+    <h1><u> Add Student</u></h1>
+    <form #form="ngForm" (ngSubmit)="stData(form)">
+        <!-- <div class="form-group">
+            <label for="exampleInputEmail1">id</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id" ngModel>
+
+        </div><br> -->
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="s_name" ngModel>
+
+        </div><br>
+        <div class=" form-group ">
+            <label for="exampleInputEmail1 ">Email</label>
+            <input type="email" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " name="s_email" ngModel>
+
+        </div><br>
+        <div class="form-group ">
+            <label for="exampleInputEmail1 ">Gender</label>
+            <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp " name="s_gender" ngModel>
+
+        </div><br>
+        <div class="form-group">
+            <label for="exampleInputEmail1 ">Phone</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp " name="s_phone" ngModel>
+
+        </div><br>
+        <div class="form-group">
+            <label for="exampleInputEmail1 ">Address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp " name="s_address" ngModel>
+
+        </div><br>
+        <div class="form-group">
+            <label for="exampleInputEmail1 ">User</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp " name="s_username" ngModel>
+
+        </div><br>
+        <div class="form-group">
+            <label for="exampleInputEmail1 ">Password</label>
+            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp " name="s_passwd" ngModel>
+
+        </div><br>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,38 @@
+<div class="container" style="margin-top: 20px;">
+    <h1><u>Student Details</u></h1>
+    <table class="table table-striped">
+        <thead>
+            <tr class="table-danger" style="height: 50px;">
+                
+                <th scope="col">First</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Phone</th>
+                <th scope="col">User</th>
+                <th scope="col">Password</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+    </table>
+    <div style="height: 440px;overflow:auto;margin-top: -15px;">
+        <table class="table table-striped">
+
+            <tbody>
+                <tr *ngFor="let student of studentData">
+                    
+                    <td>{{student.s_name}}</td>
+                    <td>{{student.s_email}}</td>
+                    <td>{{student.s_gender}}</td>
+                    <td>{{student.s_phone}}</td>
+                    <td>{{student.s_address}}</td>
+                    <td>{{student.s_username}}</td>
+                    <td>{{student.s_passwd}}</td>
+                    <td><button class="btn btn-success">Edit</button></td>
+                    <td><button class="btn btn-danger" (click)="deleteStu(student.id)">Delete</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
